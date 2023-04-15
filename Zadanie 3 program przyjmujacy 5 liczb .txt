@@ -1,0 +1,31 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        double[] numbers = new double[5];
+
+        Console.WriteLine("Proszę podaj pierwszą liczbę:");
+        numbers[0] = double.Parse(Console.ReadLine().Replace(".", ","));
+
+        Console.WriteLine("Proszę podaj drugą liczbę:");
+        numbers[1] = double.Parse(Console.ReadLine().Replace(".", ","));
+
+        Console.WriteLine("Proszę podaj trzecią liczbę:");
+        numbers[2] = double.Parse(Console.ReadLine().Replace(".", ","));
+
+        Console.WriteLine("Proszę podaj czwartą liczbę:");
+        numbers[3] = double.Parse(Console.ReadLine().Replace(".", ","));
+
+        Console.WriteLine("Proszę podaj piątą liczbę:");
+        numbers[4] = double.Parse(Console.ReadLine().Replace(".", ","));
+
+        Array.Sort(numbers);
+
+        Console.WriteLine("Najmniejsza podana przez Ciebie liczba to: " + numbers[0]);
+        Console.WriteLine("Największa podana przez Ciebie liczba to: " + numbers[4]);
+        Console.WriteLine("Dziękuję za skorzystanie z mojej aplikacji");
+        Console.ReadLine();
+    }
+}
